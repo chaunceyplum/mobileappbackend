@@ -16,7 +16,7 @@ client.connect(function (err) {
 
 app.get('/', async (req, res) => {
   const userpostView = await client.query('SELECT * FROM public.userpost')
-
+  const u = 0
   res.send({
     data: `${userpostView}`,
   })
